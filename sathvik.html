@@ -9,6 +9,25 @@
 <body>
     <h1 id="bounty-person">Gol D. Sathvik's Bounty</h1>
     <p id="bounty-amount">Mon Berry</p>
-    <script src="./sathvik.js"></script>
+    <script>
+        let counter = "9";
+        fetch('sathvik.json').then(response => response.json()).then(data => {counter = data.counter})
+
+        var counterJSON = {
+            "counter": counter
+        }
+
+        setInterval(increaseCounter(), 1000);
+
+        function increaseCounter() {
+            counter = counter + "999999999999";
+            counterJSON = { 
+                "counter": counter,
+            };
+            document.getElementById('bounty-amount').innerText = counter + " Mon Berry"
+        }
+
+        let data = JSON.stringify(counterJSON);
+    </script>
 </body>
 </html>
