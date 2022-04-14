@@ -22,9 +22,9 @@
         function increaseCounter() {
             counter = counter + "999999999999";
             counterJSON = { 
-                "counter": counter,
+                "counter": counter
             };
-            document.getElementById('bounty-amount').innerText = counter + " Mon Berry"
+            document.getElementById('bounty-amount').innerText = counter.toString() + " Mon Berry"
         }
 
         let data = JSON.stringify(counterJSON);
