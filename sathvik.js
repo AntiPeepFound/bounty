@@ -1,6 +1,5 @@
-fetch('sathvik.json').then(response => response.json())
+fetch('sathvik.json').then(response => response.json()).then(data => {let counter = data.counter})
 
-let counter = data.counter;
 var counterJSON = {
     "counter": counter
 }
