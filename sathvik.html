@@ -25,9 +25,9 @@
                 "counter": counter
             };
             document.getElementById('bounty-amount').innerText = counter.toString() + " Mon Berry"
+            fetch('sathvik.json').then(response => response.json()).then(data => {data.counter = counterJSON})
         }
 
-        let data = JSON.stringify(counterJSON);
     </script>
 </body>
 </html>
