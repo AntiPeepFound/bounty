@@ -1,0 +1,27 @@
+.container {
+    text-align: center;
+    margin: 5px;
+}
+
+.loading-svg {
+    animation: rotate 1.5s infinite linear;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+}
+@keyframes rotate {
+    from {
+       transform: rotate(0deg); } to {
+       transform: rotate(360deg); } to {
+        transform: rotate(720deg);
+    }
+}
+
+.loading-text {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.loading-text, .loading-svg {
+    display: none;
+    vertical-align: middle;
+}
