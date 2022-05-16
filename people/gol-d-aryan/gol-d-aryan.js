@@ -1,4 +1,4 @@
-var bounty = "99";
+var bounty = "0";
 
 function pageColor() {
     document.getElementById('bounty-amount').style.color = "red";
@@ -6,7 +6,8 @@ function pageColor() {
 }
 
 function updateBounty() {
-    bounty += ",999";
+    bounty = "99,999";
+    document.getElementById("bounty-amount").innerHTML = " ";
     document.getElementById("bounty-amount").innerHTML = bounty + " Monberry";
 
     if (bounty.length-9 > 15) {
