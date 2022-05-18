@@ -20,3 +20,11 @@ function entries() {
         setTimeout(function() {document.querySelector('.search-error-text').style.display = 'none';}, 3000);
     }
 }
+
+document.addEventListener('keypress', function(e) {
+   if (e.key == 'Enter') {
+       if (document.activeElement == document.querySelector('#name')) {
+              document.querySelector('#submit').click();
+       }
+   }
+});
