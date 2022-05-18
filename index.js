@@ -10,6 +10,10 @@ function entries() {
         setTimeout(function() {window.location.href = 'people/gol-d-sathvik/index.html';}, 1500);
     } else if (document.querySelector('#name').value.toLowerCase() == 'aryan') {
         setTimeout(function() {window.location.href = 'people/gol-d-aryan/index.html';}, 1500);
+    } else if (document.querySelector('#name').value.toLowerCase() == 'sai') {
+        setTimeout(function() {window.location.href = 'people/gol-d-sai/index.html';}, 1500);
+    } else if (document.querySelector('#name').value.toLowerCase() == 'peep') {
+        setTimeout(function() {window.location.href = 'people/gol-d-peep/index.html';}, 1500);
     } else {
         document.querySelector('.search-error-text').innerHTML = 'No entries for "' + document.querySelector('#name').value + '" found'
         setTimeout(function() {document.querySelector('.loading-text').style.display = 'none'; document.querySelector('.loading-svg').style.display = 'none'; document.querySelector('.search-error-text').style.display = 'block';}, 1000);

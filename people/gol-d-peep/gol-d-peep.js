@@ -1,12 +1,12 @@
-var bounty = "999,999,";
+var bounty = "999,999,999,999,999,999,999,";
 
 function pageColor() {
     document.getElementById('bounty-amount').style.color = "red";
-    setTimeout(function() {document.getElementById('bounty-amount').style.color = "black";}, 1000);
+    setTimeout(function() {document.getElementById('bounty-amount').style.color = "black";}, 1300);
 }
 
 function updateBounty() {
-    bounty += "999,999,999,999,";
+    bounty += "999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,";
     document.getElementById("bounty-amount").innerHTML = bounty + " Monberry";
 
     if (bounty.length > 15) {
@@ -26,4 +26,5 @@ function updateBounty() {
     }
 }
 
-setInterval(updateBounty, 0500);
+setInterval(updateBounty, 0250);
+
